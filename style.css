@@ -1,0 +1,148 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+.container{
+    height: 90vh;
+    width: 80vw;
+    margin: 0 auto;
+    border: 2px solid #FF00FF;
+    position: relative;
+}
+#cat{
+    height: 190px;
+    width: 300px;
+    background-color: #A0522D;
+    position: absolute;
+    bottom: 0;
+    text-align: center;
+    border-radius: 50%;
+}
+.catBody{
+    width: 120px;
+    height: 150px;
+    border: 1px solid gray;
+    border-radius: 5em 5em 4em 5em;
+    bottom: 190px;
+    position: relative;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+.catHead{
+    width: 90px;
+    height: 100px;
+    border: 1px solid gray;
+    border-radius: 50% 50%;
+    position: relative;
+    z-index: 2;
+    background-color: lightgray;
+    margin: 0 auto;
+}
+.catEars{
+    width: 35px;
+    height: 35px;
+    position: relative;
+    border: 4px solid gray;
+    background-color: white;
+    display: inline-block;
+    z-index: 1;
+}
+.catEarLeft{
+    left: 0px;
+    top: 40px;
+    transform: skew(10deg,30deg);
+}
+.catEarRight{
+    left: 0px;
+    top: 45px;
+    transform: skew(170deg,150deg);
+    border-top-right-radius: 0.8em;
+}
+.catEyes{
+    width: 15px;
+    height: 15px;
+    background-color: dimgray;
+    border-radius: 50%;
+    transform: skew(0deg,3deg);
+    position: relative;
+}
+.catEyeLeft{
+    float: left;
+    margin: 40px 0px 0px 20px;
+}
+.catEyeRight{
+    float: right;
+    margin: 40px 20px 0px 0px;
+}
+.catNose{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    position: absolute;
+    border-radius: 40%;
+    border: 1px solid black;
+    top: 70%;
+    left: 43%;
+}
+.catMoustache{
+    width: 50px;
+    height: 40px;
+    position: absolute;
+    border: 2px solid black;
+    z-index: 2;
+}
+.catMoustacheLeft{
+    width: 40px;
+    height: 30px;
+    top: 75px;
+    left:65px;
+    transform: skew(50deg);
+    border-bottom: 0px;
+    border-right: 0px;
+}
+.catMoustacheLeft2{
+    width: 50px;
+    height: 25px;
+    top: 80px;
+    left:50px;
+    transform: skew(25deg,10deg);
+    border-bottom: 0px;
+    border-right: 0px;
+}
+.catMoustacheRight{
+    height: 40px;
+    width: 20px;
+    top: 75px;
+    left: -1px;
+    transform: skew(130deg);
+    border-bottom:0;
+    border-bottom:0;
+    border-left: 0;
+}
+.catMoustacheRight2{
+    height: 30px;
+    width: 20px;
+    top: 95px;
+    left: -8px;
+    transform: skew(120deg,120deg);
+    border-bottom: 0;
+    border-left: 0;
+}
+.catMouth{
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    border: 1px solid darkgray;
+    display: inline-block;
+    position: absolute;
+    bottom: 5px;
+}
+.catMouthLeft{
+    left: 22px;
+    border-top: 0px;
+    border-right: 0px;
+}
+.catMouthRight{
+    border-top: 0px;
+    border-left: 0px;
+}
