@@ -29,6 +29,7 @@
     position: relative;
     background-color: lightgray;
     margin: 0 auto;
+    z-index: 1;
 }
 .catHead{
     width: 90px;
@@ -47,7 +48,7 @@
     border: 4px solid gray;
     background-color: white;
     display: inline-block;
-    z-index: 1;
+    z-index: 2;
 }
 .catEarLeft{
     left: 0px;
@@ -148,5 +149,15 @@
     border-top: 0px;
     border-left: 0px;
 }
-
+.catTail{
+    width: 80px;
+    height: 120px;
+    position: absolute;
+    top: -50px;
+    left: 110px;
+    border: 15px solid gray;
+    border-radius: 50%;
+    z-index: 0;
+    transform: skew(-10deg);
+}
 /*------------------------------ ... ------------------------------*/
