@@ -12,15 +12,15 @@
 
 /*------------------------------ CAT ------------------------------*/
 #cat{
-    height: 190px;
-    width: 300px;
+    height: 170px;
+    width: 200px;
     background-color: #A0522D;
     position: absolute;
-    top: 350px;
+    top: 300px;
     text-align: center;
     border-radius: 50%;
     left: 150px;
-    transform: rotate(10deg) skewX(-10deg);
+    transform: rotate(10deg) skewX(-2deg);
 }
 .catBody{
     width: 120px;
@@ -156,7 +156,7 @@
     height: 120px;
     position: absolute;
     top: -50px;
-    left: 110px;
+    left: 60px;
     border: 15px solid gray;
     border-radius: 50%;
     z-index: 0;
@@ -232,7 +232,6 @@
     left: -50%;
     border: 1px solid black;
     border-radius: 4em;
-    transform: perspective(10deg);
 }
 /*------------------------------ TREE ------------------------------*/
 .tree{
