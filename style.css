@@ -190,8 +190,9 @@
     border-radius: 50%;
     z-index: 0;
     position: relative;
-    left: -60px;
+    left: 80vw;
     transform: rotate(-10deg);
+    animation: escape 10s ease-out 3s running;
 }
 .mouseEar{
     width: 30px;
@@ -254,4 +255,20 @@
     top: 50px;
     display: inline-block;
     border-radius: 40% 10%;
+}
+/*------------------------------ ESCAPE-ANIMATION ------------------------------*/
+@keyframes escape{
+    0%
+    {
+        left: -5vw;
+        top: 10%;
+    }
+    50%{
+        left: 50vw;
+        top: 70%;
+    }
+    100%{
+        left: 80vw;
+        top: 50%;
+    }
 }
