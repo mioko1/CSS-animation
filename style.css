@@ -2,14 +2,14 @@
     padding: 0;
     margin: 0;
 }
+
 .container{
-    height: 90vh;
-    width: 80vw;
+    height: 100vh;
+    width:  100vw;
     margin: 0 auto;
     border: 2px solid #FF00FF;
     position: relative;
 }
-
 /*------------------------------ CAT ------------------------------*/
 #cat{
     height: 130px;
@@ -166,21 +166,21 @@
 .wall{
     height: 100%;
     width: 50px;
-    position: relative;
+    position: absolute;
     bottom: 0;
     background-color: gray;
-    z-index: 5;
+    z-index: 2;
     display: inline-block;
 }
 .hole{
-    width: 40px;
-    height: 60px;
+    width: 120px;
+    height: 100px;
     border-radius: 50%;
-    position: relative;
-    top: 85%;
+    position: absolute;
+    z-index: 2;
+    top: 83%;
     left: 29px;
     background-color: white;
-    z-index: 2;
 }
 .mouse{
     width: 50px;
@@ -188,13 +188,12 @@
     background-color: lightgrey;
     border: 1px solid black;
     border-radius: 50%;
-    z-index: 0;
-    position: relative;
-    left: 80vw;
-    //transform: rotate(-10deg);
+    z-index: 2;
+    position: absolute;
+    transform: rotate(-10deg);
     animation: escape 10s ease-out 0s running;
-    left: -5vw;
-    top: 30%;
+    left: 0%;
+    bottom: 5%;
 }
 .mouseEar{
     width: 20px;
@@ -242,6 +241,7 @@
     height: 90%;
     background-color: saddlebrown;
     position: absolute;
+    z-index: 5;
     right: 0px;
     bottom: 0;
     display: inline-block;
@@ -253,6 +253,7 @@
     height: 10px;
     background-color: saddlebrown;
     position: absolute;
+    Z-index: 5;
     right: 0px;
     top: 50px;
     display: inline-block;
@@ -262,15 +263,16 @@
 @keyframes escape{
     0%
     {
-        left: -5vw;
-        top: 10%;
+        left: 0%;
+        bottom: 5%;
     }
     50%{
-        left: 50vw;
-        top: 70%;
+        left: 50%;
+        bottom: 25%;
     }
     100%{
-        left: 80vw;
-        top: 70%;
+        left: 100%;
+        bottom: 0%;
+        display: none;
     }
 }
